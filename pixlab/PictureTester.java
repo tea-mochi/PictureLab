@@ -63,10 +63,10 @@ public class PictureTester
     temple.explore();
   }
   
-  public static void testMirrorGull(){
-    Picture temple = new Picture("seagull.jpg");
+  public static void testMirrorKim(){
+    Picture temple = new Picture("kim.jpg");
     temple.explore();
-    temple.mirrorGull();
+    temple.mirrorKim();
     temple.explore();
   }
   
@@ -96,7 +96,11 @@ public class PictureTester
     * method in Java */
   public static void main(String[] args)
   {
-    // uncomment a call here to run a test
+    Picture hiett = new Picture("hiett.jpg");
+      hiett.explore();
+      hiett.mirrorPic(820, 330, 800, 600);
+      hiett.explore();
+      // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
     //testZeroBlue();
@@ -112,7 +116,7 @@ public class PictureTester
     //testMirrorHorizontalBotToTop();
     //testMirrorTemple();
     //testMirrorArms();
-    //testMirrorGull();
+    //testMirrorKim();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
